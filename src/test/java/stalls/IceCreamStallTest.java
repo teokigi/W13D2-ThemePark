@@ -15,6 +15,11 @@ public class IceCreamStallTest {
     }
 
     @Test
+    public void hasRating() {
+        assertEquals(6, iceCreamStall.getRating());
+    }
+
+    @Test
     public void hasName() {
         assertEquals("Dream Cones", iceCreamStall.getName());
     }
