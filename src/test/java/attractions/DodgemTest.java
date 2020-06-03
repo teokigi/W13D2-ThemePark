@@ -16,7 +16,7 @@ public class DodgemTest {
     public void setUp() throws Exception {
         dodgems = new Dodgems("Bumper Cars", 5);
         visitor = new Visitor(21,250,100);
-        visitor2 = new Visitor(21,190,100);
+        visitor2 = new Visitor(11,250,100);
     }
 
 
@@ -39,11 +39,11 @@ public class DodgemTest {
         assertEquals(4.50,dodgems.defaultPrice(),0.01);
     }
 
-    @Test public void priceForOver200HeightVisitor(){
-        assertEquals(9.00,dodgems.priceFor(visitor),0.01);
+    @Test public void priceForOver12HeightVisitor(){
+        assertEquals(4.50,dodgems.priceFor(visitor),0.01);
     }
 
-    @Test public void priceForUnder200HeightVisitor(){
-        assertEquals(4.50,dodgems.priceFor(visitor2),0.01);
+    @Test public void priceForUnder12HeightVisitor(){
+        assertEquals(2.25,dodgems.priceFor(visitor2),0.01);
     }
 }
