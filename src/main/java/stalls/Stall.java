@@ -1,5 +1,6 @@
 package stalls;
 
+
 public abstract class Stall {
 
     private String name;
@@ -23,4 +24,6 @@ public abstract class Stall {
     public ParkingSpot getParkingSpot() {
         return parkingSpot;
     }
+
+
 }
